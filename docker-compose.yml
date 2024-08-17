@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  ubuntu:
+    build: 
+      context: ./environment
+      dockerfile: Dockerfile.ubuntu
+    container_name: ubuntu
+    tty: true
+    volumes:
+      - ./src:/home/workdir/src 
